@@ -183,11 +183,11 @@
   "status": "beta",
   "issues": "https://github.com/Keel62155/Minecraft-X-Games/issues",
   "notes": [
-    "Cyberpunk 2077 on PC at patch 2.31 (Steam, GOG or Epic) and Minecraft: Java Edition. After a game update, wait for a RED4ext that supports it: until then the game runs without the mod.",
-    "Switch off DLSS Frame Generation and FSR Frame Generation (Settings > Graphics): with either on, Minecraft's picture flickers.",
-    "Press Play: Minecraft starts first as the app's own Prism instance \"sigf-cybercraft\" (SkyCraft's Fabric mod, Minecraft 26.3, Java 25), then Cyberpunk. You do not need SkyCraft or Skyrim. Minecraft's window stays visible until Cyberpunk links up; load a save and Minecraft's hotbar appears after a few seconds.",
-    "RED4ext 1.30.0 and CyberCraft are installed into the game folder, CyberCraft downloaded from the author's own release; Restore removes both.",
-    "Run one \"Minecraft X\" mod at a time: they share the same link. F10 gives V back to Cyberpunk. Log: %LOCALAPPDATA%\\CyberCraft\\cybercraft.log.",
-    "Prototype played on one PC. Known gaps: blocks are drawn over everything, NPCs cannot hurt you, vehicle explosions do not work. Report bugs to the author on the upstream issue tracker."
+    "How it works: Minecraft runs hidden next to Cyberpunk 2077 and takes over V: you walk, build, break, fight and set off TNT by Minecraft's rules in Night City, with Minecraft's hand, blocks and hotbar. V's guns, scanner and wheels are off.",
+    "Press Play: Minecraft starts first (its window stays visible until the link is up), then Cyberpunk. Load a save where V is on foot: a few seconds later Minecraft's hotbar appears at the bottom of the screen. The first start is slower. You do not need SkyCraft or Skyrim.",
+    "Keys: WASD/Space/Shift move, left click break/hit, right click place/use, 1-9 hotbar, E inventory, T chat, F5 third person, O Minecraft menu, Esc Cyberpunk menu. F10 hands V back to Cyberpunk (to talk, shop or drive); F10 again returns to Minecraft.",
+    "Cyberpunk 2077 on PC at patch 2.31 (Steam, GOG or Epic) and Minecraft: Java Edition. Switch off DLSS Frame Generation and FSR Frame Generation (Settings > Graphics) or Minecraft's picture flickers; normal DLSS/FSR upscaling can stay. Keep DirectX 12, no overlays that take over the picture.",
+    "After a game update the mod stops until a RED4ext and CyberCraft release support it. Run one \"Minecraft X\" mod at a time. Vehicles and lifts give V back to the game until you are on foot. RED4ext and CyberCraft go into the game folder; Restore removes both.",
+    "Prototype played on one PC. Known gaps: blocks are drawn over everything, nobody can hurt you, vehicles shrug off TNT. Report bugs to the author on the upstream issue tracker with %LOCALAPPDATA%\\CyberCraft\\cybercraft.log and the red4ext\\logs folder."
   ]
 }
