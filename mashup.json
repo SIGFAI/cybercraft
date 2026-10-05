@@ -4,11 +4,11 @@
   "name": "CyberCraft",
   "tagline": "Minecraft inside Cyberpunk 2077: walk, build, break, fight and set off TNT by Minecraft's rules in Night City (RED4ext plugin + SkyCraft's Fabric mod).",
   "how_to_play": [
-    "Play Night City by Minecraft's rules: walk, build, break, fight and set off TNT as V.",
-    "Press Play: Minecraft starts first, then Cyberpunk; load a save with V on foot and wait for Minecraft's hotbar.",
-    "WASD/Space/Shift move, left click breaks or hits, right click places or uses, 1-9 hotbar, E inventory.",
-    "O opens the Minecraft menu, Esc the Cyberpunk menu, F5 third person.",
-    "Press F10 to hand V back to Cyberpunk to talk, shop or drive, and F10 again to return to Minecraft."
+    "Minecraft runs hidden next to Cyberpunk 2077 and takes over V: walk, build, break, fight and set off TNT by Minecraft's rules in Night City.",
+    "Press Play: Minecraft starts first (its window stays visible until the link is up), then Cyberpunk. Load a save where V is on foot.",
+    "A few seconds later Minecraft's hotbar appears at the bottom of the screen. V's guns, scanner and wheels are off.",
+    "WASD/Space/Shift move, left click break/hit, right click place/use, 1-9 hotbar, E inventory, T chat, F5 third person, O Minecraft menu, Esc Cyberpunk menu.",
+    "F10 hands V back to Cyberpunk (to talk, shop or drive); F10 again returns to Minecraft."
   ],
   "kind": "passthrough",
   "games": [
@@ -190,9 +190,7 @@
   "status": "beta",
   "issues": "https://github.com/Keel62155/Minecraft-X-Games/issues",
   "notes": [
-    "How it works: Minecraft runs hidden next to Cyberpunk 2077 and takes over V: you walk, build, break, fight and set off TNT by Minecraft's rules in Night City, with Minecraft's hand, blocks and hotbar. V's guns, scanner and wheels are off.",
-    "Press Play: Minecraft starts first (its window stays visible until the link is up), then Cyberpunk. Load a save where V is on foot: a few seconds later Minecraft's hotbar appears at the bottom of the screen. The first start is slower. You do not need SkyCraft or Skyrim.",
-    "Keys: WASD/Space/Shift move, left click break/hit, right click place/use, 1-9 hotbar, E inventory, T chat, F5 third person, O Minecraft menu, Esc Cyberpunk menu. F10 hands V back to Cyberpunk (to talk, shop or drive); F10 again returns to Minecraft.",
+    "The first start is slower. You do not need SkyCraft or Skyrim.",
     "Cyberpunk 2077 on PC at patch 2.31 (Steam, GOG or Epic) and Minecraft: Java Edition. Switch off DLSS Frame Generation and FSR Frame Generation (Settings > Graphics) or Minecraft's picture flickers; normal DLSS/FSR upscaling can stay. Keep DirectX 12, no overlays that take over the picture.",
     "After a game update the mod stops until a RED4ext and CyberCraft release support it. Run one \"Minecraft X\" mod at a time. Vehicles and lifts give V back to the game until you are on foot. RED4ext and CyberCraft go into the game folder; Restore removes both.",
     "Prototype played on one PC. Known gaps: blocks are drawn over everything, nobody can hurt you, vehicles shrug off TNT. Report bugs to the author on the upstream issue tracker with %LOCALAPPDATA%\\CyberCraft\\cybercraft.log and the red4ext\\logs folder."
