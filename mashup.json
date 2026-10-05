@@ -1,0 +1,193 @@
+{
+  "id": "sigf/cybercraft",
+  "version": "1.0.0",
+  "name": "CyberCraft",
+  "tagline": "Minecraft inside Cyberpunk 2077: walk, build, break, fight and set off TNT by Minecraft's rules in Night City (RED4ext plugin + SkyCraft's Fabric mod).",
+  "kind": "passthrough",
+  "games": [
+    {
+      "game": "cyberpunk",
+      "role": "host",
+      "label": "Cyberpunk 2077",
+      "engine": "Cyberpunk 2077 (REDengine 4) + RED4ext plugin (C++)",
+      "apps": {
+        "steam": "1091500",
+        "gog": "1423049311"
+      },
+      "runtime": "patch 2.31 only"
+    },
+    {
+      "game": "minecraft",
+      "role": "guest",
+      "label": "Minecraft",
+      "mc": "26.3",
+      "loader": "fabric@0.19.5",
+      "java": "25"
+    }
+  ],
+  "requires": [
+    {
+      "id": "red4ext",
+      "version": "1.30.0",
+      "license": "MIT, shipped unchanged",
+      "page": "https://github.com/wopss/RED4ext/releases/tag/v1.30.0",
+      "note": "the build for patch 2.31; installed into the game folder by the app",
+      "source": {
+        "url": "https://github.com/SIGFAI/cybercraft/releases/download/v1.0.0/red4ext-1.30.0.zip",
+        "sha256": "3a72225c9d2c46c99f4a4159d952b9d24366357c2423eb7ea255c84e9e11c0b0"
+      }
+    },
+    {
+      "id": "fabric-loader",
+      "version": "0.19.5"
+    },
+    {
+      "id": "fabric-api",
+      "version": "0.161.0+26.3",
+      "note": "in the Minecraft pack (downloaded from Modrinth)"
+    }
+  ],
+  "install": [
+    {
+      "game": "cyberpunk",
+      "strategy": "game-dir-snapshot",
+      "loader": "red4ext",
+      "files": [
+        {
+          "src": "red4ext-1.30.0.zip",
+          "dst": "{game}",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "bin/x64/winmm.dll",
+              "sha256": "22690f3ac5efbfa825b758028f114d0e7d83833160716f199c56056db01fc8be"
+            },
+            {
+              "path": "red4ext/LICENSE.txt",
+              "sha256": "a0b08b28ae3931a5a41a1788aac6c7a391513bfc3599272021ea5b2c1af2f6f6"
+            },
+            {
+              "path": "red4ext/RED4ext.dll",
+              "sha256": "59309a78a9606481d13f87e8fbf9ea9c0b735115389ded0295537180c9e52511"
+            },
+            {
+              "path": "red4ext/THIRD_PARTY_LICENSES.txt",
+              "sha256": "b49e3d32f961c21e0b15f4c9b11da9455d7c9905a457b1dfa88504f6592220ff"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/cybercraft/releases/download/v1.0.0/red4ext-1.30.0.zip",
+          "sha256": "3a72225c9d2c46c99f4a4159d952b9d24366357c2423eb7ea255c84e9e11c0b0",
+          "size": 575834
+        },
+        {
+          "src": "CyberCraft.zip",
+          "dst": "{game}/red4ext",
+          "root": "CyberCraft/red4ext",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "CyberCraft/README.txt",
+              "sha256": "b63eaa12563a0ac8647b395b3c85a8214b34acf86bcaac98497f07d775c6e0ca"
+            },
+            {
+              "path": "CyberCraft/red4ext/plugins/CyberCraft/CyberCraft.dll",
+              "sha256": "ff064a7f7f0ae878403f47aaf2a6d154d661ba33171b7c19f688fda05a69dc9e"
+            },
+            {
+              "path": "CyberCraft/CyberCraft-source.zip",
+              "sha256": "efcd98808ff88423282f0fe9c648dc5f69723ceb49aa609b072bb1f0672c7db5"
+            }
+          ],
+          "url": "https://github.com/Keel62155/Minecraft-X-Games/releases/download/1.0.0-CyberCraft/CyberCraft.zip",
+          "sha256": "339715508db7996a66a195e311008a7582d252705919e3f10fdd3159ef4c91cb",
+          "size": 165826
+        }
+      ]
+    },
+    {
+      "game": "minecraft",
+      "strategy": "mrpack",
+      "pack": {
+        "src": "cybercraft.mrpack",
+        "url": "https://github.com/SIGFAI/cybercraft/releases/download/v1.0.0/cybercraft.mrpack",
+        "sha256": "c554455058a6e02a2f6689700cad6bc60e61e56ad8a07f896ce5eaae9db280b0",
+        "size": 235698
+      }
+    }
+  ],
+  "launch": [
+    {
+      "game": "minecraft"
+    },
+    {
+      "game": "cyberpunk",
+      "args": []
+    }
+  ],
+  "files": [
+    {
+      "name": "red4ext-1.30.0.zip",
+      "url": "https://github.com/SIGFAI/cybercraft/releases/download/v1.0.0/red4ext-1.30.0.zip",
+      "sha256": "3a72225c9d2c46c99f4a4159d952b9d24366357c2423eb7ea255c84e9e11c0b0",
+      "size": 575834
+    },
+    {
+      "name": "CyberCraft.zip",
+      "url": "https://github.com/Keel62155/Minecraft-X-Games/releases/download/1.0.0-CyberCraft/CyberCraft.zip",
+      "sha256": "339715508db7996a66a195e311008a7582d252705919e3f10fdd3159ef4c91cb",
+      "size": 165826
+    },
+    {
+      "name": "cybercraft.mrpack",
+      "url": "https://github.com/SIGFAI/cybercraft/releases/download/v1.0.0/cybercraft.mrpack",
+      "sha256": "c554455058a6e02a2f6689700cad6bc60e61e56ad8a07f896ce5eaae9db280b0",
+      "size": 235698
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/Keel62155/Minecraft-X-Games",
+    "license": "No license (upstream download) + MIT",
+    "upstream_license": null,
+    "fetch": "upstream",
+    "tag": "1.0.0-CyberCraft",
+    "commit": "5af7fd206d4dc048077792b5deed8d4982ff799d",
+    "hosted": "https://github.com/SIGFAI/cybercraft",
+    "based_on": "https://github.com/chasmlol/SkyCraft",
+    "bundled": [
+      {
+        "name": "RED4ext",
+        "version": "1.30.0",
+        "repo": "https://github.com/wopss/RED4ext",
+        "license": "MIT"
+      },
+      {
+        "name": "SkyCraft (Fabric mod)",
+        "version": "0.1.2",
+        "repo": "https://github.com/chasmlol/SkyCraft",
+        "commit": "bfcaf178524b92c2cdeb88e4ce0f13ef9ded6f32",
+        "license": "MIT"
+      }
+    ]
+  },
+  "media": {},
+  "built_by": {
+    "author": "Keel62155",
+    "authors": [
+      "Keel62155",
+      "chasmlol"
+    ],
+    "packaged_by": "SIGF"
+  },
+  "idea_by": "Keel62155",
+  "built_at": "2026-10-05T00:00:00.000Z",
+  "status": "beta",
+  "issues": "https://github.com/Keel62155/Minecraft-X-Games/issues",
+  "notes": [
+    "Cyberpunk 2077 on PC at patch 2.31 (Steam, GOG or Epic) and Minecraft: Java Edition. After a game update, wait for a RED4ext that supports it: until then the game runs without the mod.",
+    "Switch off DLSS Frame Generation and FSR Frame Generation (Settings > Graphics): with either on, Minecraft's picture flickers.",
+    "Press Play: Minecraft starts first as the app's own Prism instance \"sigf-cybercraft\" (SkyCraft's Fabric mod, Minecraft 26.3, Java 25), then Cyberpunk. You do not need SkyCraft or Skyrim. Minecraft's window stays visible until Cyberpunk links up; load a save and Minecraft's hotbar appears after a few seconds.",
+    "RED4ext 1.30.0 and CyberCraft are installed into the game folder, CyberCraft downloaded from the author's own release; Restore removes both.",
+    "Run one \"Minecraft X\" mod at a time: they share the same link. F10 gives V back to Cyberpunk. Log: %LOCALAPPDATA%\\CyberCraft\\cybercraft.log.",
+    "Prototype played on one PC. Known gaps: blocks are drawn over everything, NPCs cannot hurt you, vehicle explosions do not work. Report bugs to the author on the upstream issue tracker."
+  ]
+}
