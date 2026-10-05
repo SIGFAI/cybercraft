@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "name": "CyberCraft",
   "tagline": "Minecraft inside Cyberpunk 2077: walk, build, break, fight and set off TNT by Minecraft's rules in Night City (RED4ext plugin + SkyCraft's Fabric mod).",
+  "how_to_play": [
+    "Play Night City by Minecraft's rules: walk, build, break, fight and set off TNT as V.",
+    "Press Play: Minecraft starts first, then Cyberpunk; load a save with V on foot and wait for Minecraft's hotbar.",
+    "WASD/Space/Shift move, left click breaks or hits, right click places or uses, 1-9 hotbar, E inventory.",
+    "O opens the Minecraft menu, Esc the Cyberpunk menu, F5 third person.",
+    "Press F10 to hand V back to Cyberpunk to talk, shop or drive, and F10 again to return to Minecraft."
+  ],
   "kind": "passthrough",
   "games": [
     {
